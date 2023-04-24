@@ -1,0 +1,85 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh; 
+    background: url(imgs/Library.jpg) no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 550px;
+    max-width: 50%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+}
+
+.container h1 {
+    padding: 8px;
+    border: 1px solid #fff;
+    background-color: #444;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.container .desc {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #666;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.container .person {
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #111;
+    background-color: #ffffff73;
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.container .btn {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 1px yellowgreen;
+    transform: translateY(0px);
+    transition: 0..3s
+}
+
+.container .btn:hover {
+    background-color: rgb(115, 141, 141);
+    color: #fff;
+}
+
+.container .btn:active {
+    box-shadow: 0px 0px 2px;
+    transform: translateY(4px)
+}
+
